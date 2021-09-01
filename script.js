@@ -11,11 +11,9 @@ async function generateJoke() {
         },
     }
 
-    const res =  await fetch("https://icanhazdadjoke.com', config)
-    const  data = await res.json()
-    // fetch('https://icanhazdadjoke.com', config)
-    // .then(res => res.json())
-    // .then((data) => {
+    const res =  await fetch("https://icanhazdadjoke.com",
+     config)
+    const data = await res.json()
         jokeEl.innerHTML = data.joke
     }
 
