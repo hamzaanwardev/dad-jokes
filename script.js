@@ -2,7 +2,7 @@ const jokeEl = document.getElementById('joke');
 const jokeBtn = document.getElementById ('jokebtn');
 
 jokeBtn.addEventListener('click', generateJoke)
-generateJoke()
+    generateJoke()
 
 async function generateJoke() {
     const config = {
@@ -22,7 +22,7 @@ async function generateJoke() {
     //         headers: {
     //             'Accept': 'application/json',
     //         },
-    //     }
+        // }
     // fetch('https://icanhazdadjoke.com', config)
     // .then(res => res.json())
     // .then((data) => {
